@@ -88,32 +88,19 @@ h1 {
 }
 
 .photo-wrap {
-  position: relative;
   margin: 0;
-  width: 128px;
+  width: clamp(140px, 36vw, 170px);
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   border: 3px solid #ffd7bf;
   background: linear-gradient(135deg, #ffe8d9, #fff8f1);
-  display: block;
-  overflow: hidden;
-}
-
-.initials {
-  position: absolute;
-  inset: 0;
   display: grid;
   place-items: center;
-  z-index: 0;
-  font-weight: 700;
-  color: #9b5f2e;
-  letter-spacing: 0.04em;
+  overflow: hidden;
+  justify-self: start;
 }
 
 .profile-photo {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -199,6 +186,7 @@ a {
 
   .photo-wrap {
     width: 154px;
+    justify-self: end;
   }
 }
 
